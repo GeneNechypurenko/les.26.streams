@@ -4,10 +4,11 @@ int Library::count = 0;
 
 Library::Library()
 	:
-	title("title"),
-	autor("autor"),
 	date(0)
-{}
+{
+	strcpy_s(title, " ");
+	strcpy_s(autor, " ");
+}
 
 int Library::getCount()
 {
